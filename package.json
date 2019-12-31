@@ -20,12 +20,21 @@
     }
   },
   "lint-staged": {
-    "*.js": ["yarn lint:script", "git add --force"],
-    "*.scss": ["yarn lint:style", "git add --force"]
+    "*.js": [
+      "yarn lint:script",
+      "git add --force"
+    ],
+    "*.scss": [
+      "yarn lint:style",
+      "git add --force"
+    ]
   },
   "author": "kota",
   "license": "ISC",
-  "browserslist": ["last 2 versions", "ie 9"],
+  "browserslist": [
+    "last 2 versions",
+    "ie 9"
+  ],
   "devDependencies": {
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/plugin-transform-runtime": "^7.4.4",
@@ -93,10 +102,13 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
+    "@createjs/easeljs": "^2.0.0-beta.4",
     "awesome-sass-easing": "^1.1.2",
     "axios": "^0.19.0",
+    "exif-js": "^2.3.0",
     "glob": "^7.1.4",
     "gsap": "^2.1.3",
+    "hammerjs": "^2.0.8",
     "raw-loader": "^4.0.0",
     "ress": "^1.2.2",
     "three": "^0.111.0",
