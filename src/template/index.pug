@@ -1,0 +1,23 @@
+extends ../shared/template/layout/_default
+
+block vars
+  -
+    var title = '上書き'
+
+block main
+  .camera-wrap
+    .camera-inner
+      h1.camera-title Camera Mock
+      .camera-control-wrap
+        label.test-label
+          | choose
+          input#js-file.test-input(type='file', name='file')
+        button#js-refresh.test-button
+          | Delete
+        button#js-button-coppy.test-button
+          | decision
+      #js-wrapper.warpper
+        canvas#js-canvas.test-canvas.main
+      p.camera-description 選択した画像は下にでるよ
+      .warpper-test
+        canvas#js-copy.test-canvas
