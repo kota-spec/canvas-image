@@ -62,9 +62,9 @@ class Camera {
     this.$$buttonCopy.addEventListener('click', this.onClickCopy);
     window.addEventListener('resize', () => {
       // canvasのサイズをwrapperに合わせる
-      this.$$canvas.width = this.$$wrapper.clientWidth;
+      this.$$canvas.width = this.$$wrapper.clientWidth * this.ratio;
       this.canvasWidth = this.$$canvas.width;
-      this.$$canvas.height = this.$$wrapper.clientHeight;
+      this.$$canvas.height = this.$$wrapper.clientHeight * this.ratio;
       this.canvasHeight = this.$$canvas.height;
 
       if (this.stage !== null) {
